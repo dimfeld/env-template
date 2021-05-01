@@ -80,7 +80,7 @@ mod tests {
         };
 
         let mut output = Vec::new();
-        run(args, &mut output);
+        run(args, &mut output)?;
 
         assert_eq!(
             String::from_utf8_lossy(&output),
